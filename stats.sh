@@ -84,8 +84,8 @@ function traite_fichier {
             echo -ne "Progression : $progression%\r"
             let "compteur=$compteur+1"
         done < "$1"
+        echo -ne "Progression : Fini\r"
         echo
-        echo "Statistiques effectue !!"
         echo "==========================="
         echo "Resultat :"
 		affiche_resultat | sort -r -n
